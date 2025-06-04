@@ -1,9 +1,10 @@
+import BannerSlider from "@/components/Slider";
 
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to village Ecommerce</h1>
+    <div className="mt-5 md:mt-10">
+      <BannerSlider/>
     </div>
   );
 }
