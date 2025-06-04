@@ -17,10 +17,10 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Shop', href: '/shop' },
-    { name: 'Men', href: '/men' },
-    { name: 'Women', href: '/women' },
-    { name: 'Sale', href: '/sale' },
+    { name: 'Product', href: '/product' },
+    { name: 'About', href: '/about' },
+    { name: 'Collection', href: '/collection' },
+    { name: 'Blog', href: '/blog' },
   ];
 
   const toggleMobile = () => setMobileOpen(!mobileOpen);
@@ -50,7 +50,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`transition relative after:block after:h-[2px] after:bg-primary after:transition-transform after:origin-left
+                className={`transition relative after:block after:h-[2px] after:bg-primary after:transition-transform after:origin-left font-bold
                   ${isActive ? 'text-primary after:scale-x-100' : 'text-gray-700 hover:text-primary after:scale-x-0 hover:after:scale-x-100'}
                 `}
               >
